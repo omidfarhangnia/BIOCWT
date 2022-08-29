@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style files/Local Style file.css" />
+    <link rel="stylesheet" href="../style files/Price for services Style file.css" />
+    <title>wood product services</title>
+  </head>
+  <body>
+    <div id="PageLoaderContainer" class="Page__loader__container d-flex justify-content-center align-items-center">
+      <div class="Circle__container">
+        <div class="Circle__number__1">
+          <div class="Circle__number__2">
+            <div class="Circle__number__3">
+              <div class="Circle__number__4">
+                <div class="Circle__number__5">
+                  <div class="Circle__number__6">
+                    <div class="Circle__number__7">
+                      <div class="Circle__number__8">
+                        <div class="Circle__number__9">
+                          <div class="Circle__number__10">
+                            <div class="Circle__number__11">
+                              <div class="Circle__number__12">
+                                <div class="Circle__number__13">
+                                  <div class="Circle__number__14">
+                                  </div>
+                                </div>
+                              </div>    
+                            </div>
+                          </div>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div id="WebPage" class="webPage__container d-none">
+      <header class="HomePage__header">
+        <nav class="navbar navbar-dark header__navbar">
+          <a class="navbar-brand logo__container" href="./Home Page.html">
+            <img src="../Images/LocallyImage/logo.png" class="img-fluid" alt="">
+          </a>
+          <button
+            class="navbar-toggler hamburgerr__menu--contianer d-md-none d-flex flex-column gap-1 border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#headerNavOffcanvas"
+            aria-controls="headerNavOffcanvas"
+          >
+            <div class="hamburger-menu rounded-pill"></div>
+            <div
+              class="hamburger-menu hamburger-menu-center rounded-pill"
+            ></div>
+            <div class="hamburger-menu rounded-pill align-self-end"></div>
+          </button>
+          <div class="d-none d-md-block">
+            <ul class="navbar-nav d-flex flex-row mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link MontserratBold navbar__wide__links" href="./Gallery Page.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link MontserratBold navbar__wide__links active__Page" href="./Prices For Services Page.html">Pridces for services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link MontserratBold navbar__wide__links" href="./About Us Page.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link MontserratBold navbar__wide__links" href="./Contact Page.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <article>
+        <section class="Price__list mx-auto">
+          <h2 class="text-uppercase text-white KyivSansMedium">price list</h2>
+          <div class="carousel slide" data-bs-ride="carousel" id="PriceListCarousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active tables_container position-relative table-responsive">
+                <table class="price__list__tables mx-auto text-center" id="Price__list__table--Dub">
+                  <tbody id="Price__list__table__body--Dub">
+                  </tbody>
+                </table>
+                <button class="position-absolute btn text-white read__more__btn KyivSansMedium">Read More</button>
+                <button class="position-absolute btn text-white read__Less__btn KyivSansMedium d-none">Read Less</button>
+              </div>
+              <div class="carousel-item tables_container position-relative table-responsive">
+                <table class="price__list__tables mx-auto text-center" id="Price__list__table--Jasan">
+                  <tbody id="Price__list__table__body--Jasan">
+                  </tbody>
+                </table>
+                <button class="position-absolute btn text-white read__more__btn KyivSansMedium">Read More</button>
+                <button class="position-absolute btn text-white read__Less__btn KyivSansMedium d-none">Read Less</button>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#PriceListCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous Button</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#PriceListCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next Button</span>
+            </button>
+          </div>
+        </section>
+        <section class="Price__list__searchPart container mx-auto">
+          <h2 class="text-uppercase text-white KyivSansMedium">use filter</h2>
+          <form action="#!" class="Price__list__searchPart--form d-flex flex-wrap contianer-fluid">
+            <div class="row justify-content-center justify-content-lg-between">
+              <div class="col-10 col-lg-5 d-flex align-items-center justify-content-between">
+                <label for="InputWoodSelecting" class="form-label text-white InterRegular">Select Wood</label>
+                <select class="form-select InterRegular w-50 Options__container" id="InputWoodSelecting">
+                  <option class="InputOptions InterRegular" selected>Not Selected</option>
+                  <option class="InputOptions InterRegular">Dub</option>
+                  <option class="InputOptions InterRegular">Jasan</option>
+                </select>
+              </div>
+              <div class="col-10 col-lg-5 d-flex justify-content-between">
+                <label for="InputLengthSelecting" class="form-label text-white InterRegular">Length</label>
+                <input type="number" id="InputLengthSelecting" class="w-50 ps-3 text-white" value="800" min="800" max="4000" step="100">
+              </div>
+              <div class="col-10 col-lg-5 d-flex justify-content-between">
+                <label for="InputWidthSelecting" class="form-label text-white InterRegular">Width</label>
+                <input type="number" class="w-50 ps-3 text-white" id="InputWidthSelecting" value="80" min="80" max="900" step="10">
+              </div>
+              <div class="col-10 col-lg-5 d-flex justify-content-between">
+                <label for="InputthicknessSelecting" class="form-label text-white InterRegular">Thickness</label>
+                <select class="form-select InterRegular w-50 Options__container" id="InputthicknessSelecting">
+                  <option selected>Not Selected</option>
+                  <option class="InterRegular">20</option>
+                  <option class="InterRegular">40</option>
+                  <option class="InterRegular">80</option>
+                </select>
+              </div>
+              <div class="col-10 col-lg-5 d-flex justify-content-between">
+                <label for="InputPriceM3Selecting" class="form-label text-white InterRegular">price M3</label>
+                <input type="number" class="w-50 ps-3 text-white" id="InputPriceM3Selecting" value="1500" min="1500" max="2500" step="100">
+              </div>
+              <div class="col-10 col-lg-5 d-flex justify-content-between">
+                <label for="InputPriceKSSelecting" class="form-label text-white InterRegular">price KS</label>
+                <input type="number" id="InputPriceKSSelecting" class="w-50 ps-3 text-white">
+              </div>
+              <div class="col-12 Save__filter__btn text-center">
+                <input class="btn btn-primary text-white InterRegular" type="submit" value="Save Filter" id="SetFilterBtn">
+              </div>
+            </div>
+          </form>
+          <div class="table-responsive">
+            <table class="price__list__tables text-center filter__table">
+              <tbody id="Price__list__table__body--filter" class="d-none">
+              </tbody>
+              <div id="Filter__IsEmpty__Message" class="Filter__IsEmpty__Message d-none">
+                <div class="w-75 mx-auto d-flex align-items-center justify-content-center">
+                  <h3 class="text-white InterRegular">Sorry We Don't Have It!</h3>
+                  <img src="../Images/PriceForServicesImage/ghost.png" alt="">
+                </div>
+              </div>
+            </table>
+          </div>
+        </section>
+        <section class="formSection container">
+          <h2 class="formSection--header KyivSansMedium text-end text-white text-uppercase">any questions?</h2>
+          <div class="d-flex flex-row justify-content-between flex-wrap">
+            <form action="#!" class="section__form">
+              <div>
+                <input id="name__input" type="text" class="form-control px-5 text-white InterRegular" placeholder="Your name">
+                <p class="valid-feedback fs-5 mt-2">Yup!</p>
+                <p class="invalid-feedback fs-5 mt-1">Please Check Your Name !!</p>
+              </div>
+              <div>
+                <input id="telephone__input" type="tel" name="" class="form-control px-5 text-white InterRegular" placeholder="Your telephone number">
+                <p class="valid-feedback fs-5 mt-1">Nice!</p>
+                <p class="invalid-feedback fs-5 mt-1">Oops Chech Your Phone Number !!</p>
+              </div>
+              <div>
+                <textarea id="text__area__input" name="" cols="30" rows="6" class="form-control py-3 px-4 text-white InterRegular" placeholder="Your question"></textarea>
+                <p class="valid-feedback fs-5 mt-1">GoodJob!</p>
+                <p class="invalid-feedback fs-5 mt-1">You should write something Dud !!</p>
+              </div>        
+              <input type="submit" value="Send" class="form-control w-auto text-white InterRegular" id="form__submit__btn">
+            </form>
+            <div class="formSection--pAndimg--container">
+              <p class="InterRegular text-white text-end formSection--prag">Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.</p>
+            </div>
+          </div>
+        </section> 
+      </article>
+      <footer class="footerPage__container d-flex flex-column flex-lg-row align-items-center flex-wrap justify-content-lg-between">
+        <a class="Logo__footer__container mb-lg-0">
+          <img src="../Images/LocallyImage/logo.png" alt="">
+        </a>
+        <address class="d-flex flex-column flex-lg-row mb-lg-0 align-items-center justify-content-between">
+          <p class="address__address position-relative mb-lg-0 text-white text-center MontserratBold">
+            Na Plzeňce 1166/1<br>
+            Прага 5 - Смихов, 150 00
+          </p>
+          <p class="address__phonenumber position-relative mb-lg-0 text-white MontserratBold order-lg-first">
+            +420 000 000 000
+          </p>
+        </address>
+        <div class="w-100 d-none d-lg-block"></div>
+        <p class="text-white InterRegular"><a href="#" class="text-white text-decoration-none">Terms of Service</a> · <a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+      </footer>
+    </div>
+    <div
+      class="offcanvas offcanvas-end navbar__offcanvas"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="headerNavOffcanvas"
+      aria-labelledby="headerNavOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h3 class="text-uppercase text-center InterRegular ms-4 mt-3 user-select-none">bio<br>cwt</h3>
+        <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mt-3 ms-4">
+            <li class="nav-item">
+              <a class="nav-link MontserratBold offcanvas__links" href="./Gallery Page.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link MontserratBold offcanvas__links offcanvas__links--active" href="./Prices For Services Page.html">Pridces for services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link MontserratBold offcanvas__links" href="./About Us Page.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link MontserratBold offcanvas__links" href="./Contact Page.html">Contact</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div id="success__massage__toast" role="alert" aria-live="assertive" aria-atomic="true" class="toast position-fixed bottom-0 end-0 m-4">
+      <div class="toast-header">
+          <strong class="me-auto text-primary">Admin</strong>
+          <small>now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Your Massage Send Successfully.
+      </div>
+    </div>
+    <!-- script files -->
+    <script src="../js files/local script file.js"></script>
+    <script src="../js files/prices for services script file.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

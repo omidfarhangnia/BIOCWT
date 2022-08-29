@@ -1,0 +1,149 @@
+/**********************************
+       OurWorkSlider style
+**********************************/
+.OurWork{
+    margin-top: 200px;
+}
+#OurWorkSlider img{
+    width: 90%;
+    max-width: 1130px;
+    min-width: 301px;
+    max-height: 754px;
+    min-height: 200px;
+    height: 80vh;
+    border-radius: 42px;
+    object-fit: cover;
+}
+/* styling for customizing indicators in bootstrap */
+#OurWorkSlider > .carousel-indicators{
+    transform: translate(0 , 70px);
+}
+#OurWorkSlider > .carousel-indicators > button{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 4px solid var(--bs--Color--18);
+}
+.transparet-for-background{
+    background: transparent !important;
+}
+#OurWorkSlider > .carousel-indicators > button[class *="active"]{
+    background: var(--bs--Color--20) !important;
+}
+@media (max-width: 576px) {
+    #OurWorkSlider img{
+        border-radius: 14px;
+        width: 70%;
+    }
+    #OurWorkSlider > .carousel-indicators{
+        transform: translate(0 , 50px);
+    }
+    #OurWorkSlider > .carousel-indicators > button{
+        width: 11px;
+        height: 11px; 
+        border: 2px solid var(--bs--Color--18);
+    }
+}
+@media (max-width: 1000px) {
+    .OurWork{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .OurWork > h2{
+        margin-bottom: 53px;
+    }
+}
+@media (max-width: 600px) {
+    .OurWork > h2{
+        margin-top: 70px;
+        font-size: 40px;
+    }
+}
+/*********************************************
+    The Wood We Work With section style 
+*********************************************/
+.TheWoodWeWorkWith , .OurWork{
+    margin-bottom: 275px;
+}
+.TheWoodWeWorkWith > h2 , .OurWork > h2{
+    font-size: 90px; 
+    margin-bottom: 100px;
+}
+.woodContainer > div[class *="card"]{
+    background-color: transparent;
+}
+.CardImageTheWoodWe{
+    width: 60%;
+    max-width: 205px;
+    min-width: 90px;
+}
+.woodContainer__header{
+    font-size: 30px;
+    font-weight: bold;
+}
+.woodContainer__listMembers{
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 50px;
+}
+.positive__point{
+    list-style-image: url(../Images/LocallyImage/Tick\ vector.png);
+}
+.nagetive__point{
+    list-style-image: url(../Images/LocallyImage/cross\ vector.png);
+}
+@media (max-width: 1000px) {
+    .woodContainer__header{
+        font-size: 20px;
+    }
+    .woodContainer__listMembers{
+        font-size: 15px;
+    }
+    .positive__point{
+        list-style-image: url(../Images/LocallyImage/smaller\ Tick\ vector.png);
+    }
+    .nagetive__point{
+        list-style-image: url(../Images/LocallyImage/smaller\ cross\ vector.png);
+    }
+    .TheWoodWeWorkWith , .OurWork{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .TheWoodWeWorkWith > h2 , .OurWork > h2{
+        margin-bottom: 53px;
+    }
+}
+@media (max-width: 600px) {
+    .woodContainer > div{
+        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+    }
+    .CardImageTheWoodWe{
+        width: 90px;
+    }
+    .woodContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .TheWoodWeWorkWith , .OurWork{
+        margin-top: 6px;
+    }
+    .TheWoodWeWorkWith > h2 , .OurWork > h2{
+        font-size: 30px;
+    }
+    .woodContainer::-webkit-scrollbar {
+        height: 4px;
+    }
+    .woodContainer::-webkit-scrollbar-track {
+        background: var(--bs--Color--03); 
+    }
+    .woodContainer::-webkit-scrollbar-thumb {
+        background: var(--bs--Color--21); 
+    }
+    .woodContainer::-webkit-scrollbar-thumb:hover {
+        background: var(--bs--Color--20); 
+    }
+}
