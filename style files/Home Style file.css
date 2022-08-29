@@ -1,0 +1,600 @@
+.header__navbar--home{
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 1;
+}
+
+.HeaderHomePage__container{
+    background-image: url(../Images/HomePageImage/wood\ style.png) , url(../Images/HomePageImage/home-bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover , auto;
+}
+
+.SolidWoodProd__section > div{
+    width: 50%;
+}
+
+.SolidWoodProd__section{
+    width: 90%;
+    align-self: flex-end;
+    background-color: var(--bs--Color--01);
+    background-image: url(../Images/HomePageImage/wood\ style.png);
+    background-size: cover;
+    background-position: 50%;
+    padding: 40px 115px 50px 50px;
+    border-radius: 43px 0 0 43px;
+    margin-bottom: 80px;
+    box-shadow: 0px 3px 20px #ffffff30 , 
+    0px -3px 20px #ffffff30;
+}
+
+.Solid__section--imageContainer{
+    border-left: 1px solid #f5f5f5;
+    margin-bottom: 45px;
+}
+
+.Solid__section--textContainer > h1{
+    font-size: 90px;
+}
+
+.Solid__section--textContainer > p{
+    font-size: 30px;
+    color: var(--bs--Color--16);
+    margin-bottom: 60px;
+}
+
+.Solid__section--textContainer > button{
+    font-size: 30px;
+    background: var(--bs--Color--18);
+    border-radius: 42px;
+    font-weight: bold;
+    padding: 11px 70px;
+}
+
+.Solid__section--imageContainer{
+    display: grid;
+    grid-template-columns: [first-wall] 1fr [second-wall] 1fr [third-wall];
+    grid-template-rows: [first-wall] 1fr [second-wall] 1fr [third-wall] .5fr [forth-wall] 1fr [fifth-wall] 1fr [sixth-wall] 1fr [seventh-wall];
+    padding: 0 0 0 50px;
+}
+
+.first__Empty__place{
+    grid-column: first-wall / second-wall;
+    grid-row: first-wall / third-wall;
+}
+
+.first__Image{
+    grid-column: second-wall / third-wall;
+    grid-row: first-wall / third-wall;
+    animation: FirstImageTranslateForImage 10s infinite;
+}
+
+.second__Empty__place{
+    grid-column: first-wall / third-wall;
+    grid-row: third-wall / forth-wall;
+}
+
+.second__Image{
+    grid-column: first-wall / second-wall;
+    grid-row: forth-wall / sixth-wall;
+    animation: SecondImageTranslateForImage 10s infinite;
+}
+
+.third__Empty__place{
+    grid-column: second-wall / third-wall;
+    grid-row: forth-wall / fifth-wall;
+}
+
+.forth__Empty__place{
+    grid-column: first-wall / second-wall;
+    grid-row: sixth-wall / seventh-wall;
+}
+
+.third__Image{
+    grid-column: second-wall / third-wall;
+    grid-row: fifth-wall / seventh-wall;
+    animation: ThirdImageTranslateForImage 10s infinite;
+}
+
+.Solid__section--imageContainer > img{
+    filter: blur(2px);
+    transition: 2s;
+    z-index: 1;
+}
+
+.Solid__section--imageContainer > img:hover{
+    transition: 2s;
+    filter: blur(0);
+    z-index: 2;
+}
+
+@keyframes FirstImageTranslateForImage {
+    0% , 100%{
+        transform: translate(0 , 0);
+    }
+    33%{
+        transform: translate(10px , 10px);
+    }
+    66%{
+        transform: translate(-10px , -10px);
+    }
+}
+@keyframes SecondImageTranslateForImage {
+    0% , 100%{
+        transform: translate(0 , 0);
+    }
+    33%{
+        transform: translate(-10px , 10px);
+    }
+    66%{
+        transform: translate(10px , -10px);
+    }
+}
+@keyframes ThirdImageTranslateForImage {
+    0% , 100%{
+        transform: translate(0 , 0);
+    }
+    33%{
+        transform: translate(10px , -10px);
+    }
+    66%{
+        transform: translate(-10px , 10px);
+    }
+}
+
+.custom__tooltip{
+    --bs-tooltip-bg: var(--bs--Color--22);
+    --bs-tooltip-color: var(--bs--Color--08);
+    --bs-tooltip-padding-y: 10px;
+    --bs-tooltip-padding-x: 15px;
+}
+
+@media (max-width: 1400px) {
+    .SolidWoodProd__section{
+        padding: 30px 80px 30px 40px;
+    }
+    
+    .Solid__section--textContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+    }
+    
+    .Solid__section--textContainer > h1{
+        font-size: 40px;
+    }
+    
+    .Solid__section--textContainer > p{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .Solid__section--textContainer > button{
+        font-size: 20px;
+        padding: 6px 40px;
+    }
+    
+    .Solid__section--imageContainer{
+        width: 40%;
+        grid-template-columns: [first-wall] 50% [second-wall] 50% [third-wall];
+        grid-template-rows: [first-wall] 70px [second-wall] 70px [third-wall] 25px [forth-wall] 70px [fifth-wall] 70px [sixth-wall] 70px [seventh-wall];
+        padding: 0 0 0 50px;
+    }
+
+    .Solid__section--imageContainer > img{
+        width: 150px;
+    }
+    
+    .Solid__section--imageContainer{
+        margin-bottom: 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .SolidWoodProd__section{
+        padding: 30px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    
+    .Solid__section--textContainer{
+        width: 100% !important;
+    }
+    
+    .Solid__section--textContainer > h1{
+        font-size: 30px;
+    }
+    
+    .Solid__section--textContainer > p{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .Solid__section--textContainer > button{
+        font-size: 15px;
+        padding: 6px 30px;
+    }
+    .Solid__section--imageContainer{
+        width: 100% !important;
+        grid-template-columns: [first-wall] 33% [second-wall] 33% [third-wall] 33% [forth-wall];
+        grid-template-rows: [first-wall] 90px [second-wall];
+        padding: 30px 0 0 0;
+        border-left: none;
+        border-top: 1px solid #f5f5f5;
+        margin-top: 30px;
+    }
+    .Solid__section--imageContainer > img{
+        width: 80px;
+        animation: none;
+    }
+    .Solid__section--imageContainer{
+        margin-bottom: 0;
+    }
+    .first__Image{
+        grid-column: first-wall / second-wall;
+        grid-row: first-wall / second-wall;
+        margin: auto;
+    }
+    .second__Image{
+        grid-column: second-wall / third-wall;
+        grid-row: first-wall / second-wall;
+        margin: auto;
+    }
+    .third__Image{
+        grid-column: third-wall / forth-wall;
+        grid-row: first-wall / second-wall;
+        margin: auto;
+    }
+}
+
+/*********************************************
+    The Wood We Work With section style 
+*********************************************/
+
+.TheWoodWeWorkWith , .OurWork{
+    margin-top: 300px;
+    margin-bottom: 275px;
+}
+
+.TheWoodWeWorkWith > h2 , .OurWork > h2{
+    font-size: 90px; 
+    margin-bottom: 100px;
+}
+
+.woodContainer > div[class *="card"]{
+    background-color: transparent;
+}
+
+.CardImageTheWoodWe{
+    width: 60%;
+    max-width: 205px;
+    min-width: 90px;
+}
+
+.woodContainer__header{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.woodContainer__listMembers{
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 50px;
+}
+
+.positive__point{
+    list-style-image: url(../Images/LocallyImage/Tick\ vector.png);
+}
+.nagetive__point{
+    list-style-image: url(../Images/LocallyImage/cross\ vector.png);
+}
+
+
+@media (max-width: 1000px) {
+    .woodContainer__header{
+        font-size: 20px;
+    }
+    .woodContainer__listMembers{
+        font-size: 15px;
+    }
+    .positive__point{
+        list-style-image: url(../Images/LocallyImage/smaller\ Tick\ vector.png);
+    }
+    .nagetive__point{
+        list-style-image: url(../Images/LocallyImage/smaller\ cross\ vector.png);
+    }
+    .TheWoodWeWorkWith , .OurWork{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .TheWoodWeWorkWith > h2 , .OurWork > h2{
+        margin-bottom: 53px;
+    }
+}
+
+@media (max-width: 600px) {
+    .woodContainer > div{
+        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+    }
+    .CardImageTheWoodWe{
+        width: 90px;
+    }
+    .woodContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .TheWoodWeWorkWith , .OurWork{
+        margin-top: 6px;
+    }
+    .TheWoodWeWorkWith > h2 , .OurWork > h2{
+        font-size: 30px;
+    }
+    .woodContainer::-webkit-scrollbar {
+        height: 4px;
+    }
+    .woodContainer::-webkit-scrollbar-track {
+        background: var(--bs--Color--03); 
+    }
+    .woodContainer::-webkit-scrollbar-thumb {
+        background: var(--bs--Color--21); 
+    }
+    .woodContainer::-webkit-scrollbar-thumb:hover {
+        background: var(--bs--Color--20); 
+    }
+}
+
+/**********************************
+       OurWorkSlider style
+**********************************/
+
+#OurWorkSlider img{
+    width: 90%;
+    max-width: 1130px;
+    min-width: 301px;
+    max-height: 754px;
+    min-height: 200px;
+    height: 80vh;
+    border-radius: 42px;
+    object-fit: cover;
+}
+
+/* styling for customizing indicators in bootstrap */
+
+#OurWorkSlider > .carousel-indicators{
+    transform: translate(0 , 70px);
+}
+#OurWorkSlider > .carousel-indicators > button{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 4px solid var(--bs--Color--18);
+}
+.transparet-for-background{
+    background: transparent !important;
+}
+#OurWorkSlider > .carousel-indicators > button[class *="active"]{
+    background: var(--bs--Color--20) !important;
+}
+@media (max-width: 576px) {
+    #OurWorkSlider img{
+        border-radius: 14px;
+        width: 70%;
+    }
+    #OurWorkSlider > .carousel-indicators{
+        transform: translate(0 , 50px);
+    }
+    #OurWorkSlider > .carousel-indicators > button{
+        width: 11px;
+        height: 11px; 
+        border: 2px solid var(--bs--Color--18);
+    }
+}
+
+/*******************************************
+     Advantages working with us style
+*******************************************/
+
+.AdvantagesWorkingWithUs{
+    padding: 0 150px;
+    margin-bottom: 300px;
+}
+.AdvantagesSection--header > h2{
+    font-size: 90px;
+    margin-bottom: 120px;
+}
+.AdvantagesSection--img--pragraph p{
+    font-size: 30px;
+}
+.AdvantagesSection--img--pragraph{
+    margin-bottom: 126px;
+}
+.AdvantagesSection--img--pragraph > img{
+    object-fit: fill;
+}
+.AdvantagesSection--btn > button{
+    font-size: 30px;
+    width: 33%;
+    max-width: 472px;
+    min-width: 219px;
+    background: var(--bs--Color--18);
+}
+@media (max-width: 1000px) {
+    .AdvantagesWorkingWithUs{
+        padding: 0 70px;
+        margin-bottom: 200px;
+    }
+    .AdvantagesSection--header > h2{
+        font-size: 60px;
+        margin-bottom: 60px;
+        margin-top: 100px;
+    }
+    .AdvantagesSection--img--pragraph p{
+        font-size: 20px;
+    }
+    .AdvantagesSection--img--pragraph{
+        margin-bottom: 60px;
+    }
+    .AdvantagesSection--btn > button{
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .AdvantagesWorkingWithUs{
+        padding: 0 15px;
+        margin-bottom: 90px;
+    }
+    .AdvantagesSection--header > h2{
+        font-size: 30px;
+        margin-bottom: 60px;
+        margin-top: 100px;
+    }
+    .AdvantagesSection--img--pragraph p{
+        font-size: 15px;
+    }
+    .AdvantagesSection--img--pragraph{
+        margin-bottom: 30px;
+    }
+    .AdvantagesSection--btn > button{
+        font-size: 15px;
+    }
+}
+/*******************************
+       AboutUs section
+*******************************/
+.AboutUs{
+    width: 90%;
+    background: #42100187;
+    padding: 50px;
+    border-radius: 0 42px 42px 0;
+    box-shadow: 0px 3px 20px #ffffff30,
+    0px -3px 20px #ffffff30;
+    padding: 60px 60px 10px 10%;
+}
+.AboutUs--textpart{
+    width: 50%;
+}
+.AboutUs--textpart > h2{
+    font-size: 90px;
+    margin-bottom: 60px;
+}
+.AboutUs--textpart > p{
+    font-size: 30px;
+    line-height: 200%;
+}
+.AboutUs--images{
+    width: 45%;
+}
+.First--AboutUs--Image , .Third--AboutUs--Image{
+    align-self: flex-end;
+}
+.second--AboutUs--Image{
+    display: none;
+}
+.AboutUs--image--BetweenSpace{
+    height: 300px;
+    width: 100%;
+}
+.AboutUs--image--BetweenSpace::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    max-width: 337px;
+    max-height: 337px;
+    min-width: 182px;
+    min-height: 182px;
+    border-radius: 50px;
+    background: url(../Images/HomePageImage/second\ about\ us\ image.png) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    bottom: 40px;
+    left: 100px;
+}
+.Third--AboutUs--Image{
+    transform: translateX(-40px);
+}
+@media (max-width: 1340px) {
+    .AboutUs{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .AboutUs--textpart{
+        width: 100%;
+    }
+    .AboutUs--images{
+        width: 100%;
+    }
+    .AboutUs--textpart > h2{
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .AboutUs--textpart > p{
+        font-size: 20px;
+        line-height: 160%;
+    }
+    .AboutUs--images{
+        width: 100%;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    .AboutUs--images > img{
+        width: 30%;
+        min-width: 111px;
+        transform: none;
+        align-self: center;
+    }
+    .second--AboutUs--Image{
+        display: block;
+    }
+    .AboutUs--image--BetweenSpace{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .AboutUs{
+        padding: 50px 17px;
+    }
+    .AboutUs--textpart > h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .AboutUs--textpart > p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .AboutUs--images{
+        width: 100%;
+        position: relative;
+        height: 250px;
+    }
+    .AboutUs--images > img{
+        width: 50%;
+        transform: none;
+        align-self: center;
+        position: absolute;
+        border-radius: 20%;
+    }
+    .First--AboutUs--Image{
+        left: 0;
+        z-index: 1;
+    }
+    .second--AboutUs--Image{
+        left: 25%;
+        z-index: 3;
+    }
+    .Third--AboutUs--Image{
+        left: 50%;
+        z-index: 2;
+    }
+    .AboutUs--images > img:hover{
+        transition-delay: .3s;
+        z-index: 4;
+    }
+}
