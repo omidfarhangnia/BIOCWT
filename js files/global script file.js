@@ -27,7 +27,8 @@ var FormBtn = document.getElementById("form__submit__btn");
 var NameInput = document.getElementById("name__input");
 var TelePhoneInput = document.getElementById("telephone__input");
 var TextAreaInput = document.getElementById("text__area__input");
-FormBtn.addEventListener("click" , () => {
+FormBtn.addEventListener("click" , (element) => {
+    element.preventDefault();
     let IsTheNameInputCorrect = CheckTheNameInput();
     let IsTheTelInputCorrect  = CheckTheTelInput();
     let IsTheTextAreaInputCorrect  = CheckingTheAreaInput();
