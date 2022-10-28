@@ -5,7 +5,7 @@
 // for(var i = 0; i < Jasan.length; i++){
 //     DubAndJasan.push(Jasan[i])
 // }
-    fetch("./data/Jasan wood data.json")
+    fetch('Jasan wood data.json')
     .then(response => response.json())
     .then(data => console.log(data))
 // window.addEventListener("load" , () => {
