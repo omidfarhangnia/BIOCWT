@@ -5,9 +5,15 @@
 // for(var i = 0; i < Jasan.length; i++){
 //     DubAndJasan.push(Jasan[i])
 // }
-    fetch('Jasan wood data.json')
-    .then(response => response.json())
-    .then(data => console.log(data))
+fetch('/js files/Dub wood data.json')
+  .then( response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then( json => console.log(json) )
+  .catch( err => console.error(`Fetch problem: ${err.message}`) );
 // window.addEventListener("load" , () => {
 //     // MakeHeaderForTable("Dub" , Dub , "Price__list__table__body--Dub");
 //     // MakeDataCellForTable(Dub , "Price__list__table__body--Dub");
