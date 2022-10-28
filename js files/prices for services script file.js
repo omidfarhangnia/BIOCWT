@@ -504,7 +504,7 @@ for(var i = 0; i < Dub.length; i++){
 }
 for(var i = 0; i < Jasan.length; i++){
     DubAndJasan.push(Jasan[i])
-}
+} 
 window.addEventListener("load" , () => {
     MakeHeaderForTable("Dub" , Dub , "Price__list__table__body--Dub");
     MakeDataCellForTable(Dub , "Price__list__table__body--Dub");
