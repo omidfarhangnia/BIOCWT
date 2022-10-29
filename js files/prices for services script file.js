@@ -1,16 +1,23 @@
 
-var DubAndJasan = [];
-for(var i = 0; i < Dub.length; i++){
-    DubAndJasan.push(Dub[i])
+// var DubAndJasan = [];
+// for(var i = 0; i < Dub.length; i++){
+//     DubAndJasan.push(Dub[i])
+// }
+// for(var i = 0; i < Jasan.length; i++){
+//     DubAndJasan.push(Jasan[i])
+// }
+window.addEventListener("load" , startProcess)
+async function startProcess () {
+    let response = await fetch("https://raw.githubusercontent.com/omidfarhangnia/BIOCWT-Website/main/js%20files/data/Dub%20wood%20data.json")
+    let data = response.json();
+    return data
 }
-for(var i = 0; i < Jasan.length; i++){
-    DubAndJasan.push(Jasan[i])
-}
-window.addEventListener("load" , () => {
-    MakeHeaderForTable("Dub" , Dub , "Price__list__table__body--Dub");
-    MakeDataCellForTable(Dub , "Price__list__table__body--Dub");
-    MakeHeaderForTable("Jasan" , Jasan , "Price__list__table__body--Jasan");
-    MakeDataCellForTable(Jasan , "Price__list__table__body--Jasan");
+startProcess().then(function (ret){
+    console.log(ret)
+    // MakeHeaderForTable("Dub" , Dub , "Price__list__table__body--Dub");
+    // MakeDataCellForTable(Dub , "Price__list__table__body--Dub");
+    // MakeHeaderForTable("Jasan" , Jasan , "Price__list__table__body--Jasan");
+    // MakeDataCellForTable(Jasan , "Price__list__table__body--Jasan");
 })
 function MakeHeaderForTable(arrayName , array , element) {
     var PriceListTableHead = document.getElementById(`${element}`);
