@@ -1,0 +1,210 @@
+[
+    {
+        "priceKS" : "261,8",
+        "priceM3" : "1700",
+        "m3" : "0,0044",
+        "thickness" : "20",
+        "width" : "200",
+        "length" : "1000"
+    } , 
+    {
+        "priceKS" : "190,4",
+        "priceM3" : "1700",
+        "m3" : "0,0032",
+        "thickness" : "20",
+        "width" : "200",
+        "length" : "800"
+    } , 
+    {
+        "priceKS" : "214,2",
+        "priceM3" : "1700",
+        "m3" : "0,0036",
+        "thickness" : "20",
+        "width" : "200",
+        "length" : "900"
+    } , 
+    {
+        "priceKS" : "3427,2",
+        "priceM3" : "1700",
+        "m3" : "0,0576",
+        "thickness" : "40",
+        "width" : "900",
+        "length" : "1600"
+    } ,    
+    {
+        "priceKS" : "3641,4",
+        "priceM3" : "1700",
+        "m3" : "0,0612",
+        "thickness" : "40",
+        "width" : "900",
+        "length" : "1700"
+    } , 
+    {
+        "priceKS" : "3855,6",
+        "priceM3" : "1700",
+        "m3" : "0,0648",
+        "thickness" : "40",
+        "width" : "900",
+        "length" : "1800"
+    } , 
+    {
+        "priceKS" : "4788",
+        "priceM3" : "2000",
+        "m3" : "0,0684",
+        "thickness" : "40",
+        "width" : "900",
+        "length" : "1900"
+    } , 
+    {
+        "priceKS" : "4186",
+        "priceM3" : "2000",
+        "m3" : "0,0598",
+        "thickness" : "40",
+        "width" : "650",
+        "length" : "2300"
+    } , 
+    {
+        "priceKS" : "4550",
+        "priceM3" : "2000",
+        "m3" : "0,065",
+        "thickness" : "40",
+        "width" : "650",
+        "length" : "2500"
+    } , 
+    {
+        "priceKS" : "5278",
+        "priceM3" : "2000",
+        "m3" : "0,0754",
+        "thickness" : "40",
+        "width" : "650",
+        "length" : "2900"
+    } , 
+    {
+        "priceKS" : "5460",
+        "priceM3" : "2000",
+        "m3" : "0,078",
+        "thickness" : "40",
+        "width" : "650",
+        "length" : "3000"
+    } , 
+    {
+        "priceKS" : "1008",
+        "priceM3" : "1500",
+        "m3" : "0,0192",
+        "thickness" : "80",
+        "width" : "80",
+        "length" : "3000"
+    } , 
+    {
+        "priceKS" : "1344",
+        "priceM3" : "1500",
+        "m3" : "0,0256",
+        "thickness" : "80",
+        "width" : "80",
+        "length" : "4000"
+    } , 
+    {
+        "priceKS" : "714",
+        "priceM3" : "1700",
+        "m3" : "0,012",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "1000"
+    } , 
+    {
+        "priceKS" : "856,8",
+        "priceM3" : "1700",
+        "m3" : "0,0144",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "1200"
+    } , 
+    {
+        "priceKS" : "928,2",
+        "priceM3" : "1700",
+        "m3" : "0,0156",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "1300"
+    } ,
+    {
+        "priceKS" : "571,2",
+        "priceM3" : "1700",
+        "m3" : "0,0096",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "800"
+    } , 
+    {
+        "priceKS" : "642,6",
+        "priceM3" : "2000",
+        "m3" : "0,0108",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "900"
+    } , 
+    {
+        "priceKS" : "1890",
+        "priceM3" : "1500",
+        "m3" : "0,036",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "3000"
+    } , 
+    {
+        "priceKS" : "2520",
+        "priceM3" : "1500",
+        "m3" : "0,048",
+        "thickness" : "40",
+        "width" : "300",
+        "length" : "4000"
+    } , 
+    {
+        "priceKS" : "4233,6",
+        "priceM3" : "2000",
+        "m3" : "0,06048",
+        "thickness" : "40",
+        "width" : "630",
+        "length" : "2400"
+    } , 
+    {
+        "priceKS" : "2205",
+        "priceM3" : "2000",
+        "m3" : "0,0315",
+        "thickness" : "20",
+        "width" : "630",
+        "length" : "2500"
+    } , 
+    {
+        "priceKS" : "2293,2",
+        "priceM3" : "2000",
+        "m3" : "0,03276",
+        "thickness" : "20",
+        "width" : "630",
+        "length" : "2600"
+    } , 
+    {
+        "priceKS" : "2469,6",
+        "priceM3" : "2000",
+        "m3" : "0,03528",
+        "thickness" : "20",
+        "width" : "630",
+        "length" : "2800"
+    } , 
+    {
+        "priceKS" : "2557,8",
+        "priceM3" : "2000",
+        "m3" : "0,03654",
+        "thickness" : "20",
+        "width" : "630",
+        "length" : "2900"
+    } , 
+    {
+        "priceKS" : "2646",
+        "priceM3" : "2000",
+        "m3" : "0,0378",
+        "thickness" : "20",
+        "width" : "630",
+        "length" : "3000"
+    }
+] 
